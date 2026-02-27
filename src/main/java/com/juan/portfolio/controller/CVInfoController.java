@@ -23,10 +23,6 @@ public class CVInfoController {
 
         String lang = locale != null ? locale.getLanguage() : "en";
 
-        if (!lang.equals("es") && !lang.equals("en")){
-            lang = "en";
-        }
-
         return cvInfoService.getInfo(lang);
 
     }

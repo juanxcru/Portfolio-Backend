@@ -41,23 +41,33 @@
     },
     "experience": [
       {
-        "company": "",
-        "role": {"es": "", "en": "" },
+        "company": "Freelance",
+        "role": {"es": "Desarrollador Backend", "en": "Backend Developer" },
         "from": "",
         "to": "",
         "description":{"es":"", "en": ""},
         "bullets": [
-          "", ""
+          "Spring Boot","Java", "Python", "TypeScript"
         ]
       },
       {
-        "company": "",
-        "role": {"es": "", "en": "" },
+        "company": "Link S.A.",
+        "role": {"es": "Desarrollador Backend", "en": "Backend Developer" },
+        "from": "",
+        "to": "",
+        "description":{"es":"", "en": ""},
+        "bullets": [
+          "Base24","Java", "C/C++", "TAL", "Python"
+        ]
+      },
+      {
+        "company": "Prisma Medios de Pago",
+        "role": {"es": "Desarrollador Backend", "en": "Backend Developer" },
         "from": "",
         "to": "",
         "description": {"es":"", "en": ""},
         "bullets": [
-          "", ""
+          "Base24","Java", "C/C++", "TAL"
         ]
       }
 

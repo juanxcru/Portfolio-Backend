@@ -45,7 +45,7 @@ public class CVInfoService {
     }
 
     private String resolveTxt(JsonNode node, String lang){
-        if (node == null || !node.isNull()) {
+        if (node == null || node.isNull()) {
             return null;
         }
 
