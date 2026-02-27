@@ -1,8 +1,7 @@
 spring:
   application:
     name: portfolio
-github:
+githubclient:
   base-url: https://api.github.com
-  token: ${GITHUB_TOKEN:}   #env
-  user-agent:
+  user-agent: juan-portfolio
   username: juanxcru

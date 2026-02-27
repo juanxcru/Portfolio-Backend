@@ -2,6 +2,7 @@ package com.juan.portfolio.service;
 
 
 import com.juan.portfolio.client.GitHubClient;
+import com.juan.portfolio.model.dto.GitHubRepoDTO;
 import com.juan.portfolio.model.dto.ProjectDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -17,11 +18,10 @@ public class ProjectService {
     GitHubClient gitHubClient;
 
 
-    public List<ProjectDto> listProjects(){
+    public List<GitHubRepoDTO> listProjects(){
 
-
-
-        return null;
+        gitHubClient.listUserRepos(null);
+        return
     }
 
 }

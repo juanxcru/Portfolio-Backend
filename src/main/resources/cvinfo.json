@@ -1,0 +1,65 @@
+{
+
+    "title": {
+      "es" :"Desarrollador Backend",
+      "en": "Backend Developer"
+    },
+    "subtitle": {
+      "es":"Construyo sistemas escalables, seguros y de alto rendimiento. Me apasiona la arquitectura limpia, los sistemas distribuidos y transformar problemas complejos en soluciones simples y bien pensadas.",
+      "en":"Building scalable, secure, and high-performance systems. Passionate about clean architecture, distributed systems, and turning complex problems into elegant solutions."
+    },
+    "availability": {
+      "es":"Estoy disponible solo para proyectos/posiciones remotas",
+      "en":"Open to remote opportunities only"
+    },
+    "cover_letter" : {
+      "es":"",
+      "en":""
+    },
+    "location": {"es": "Actualmente, viajando", "en": "Currently, travelling"},
+    "email": "dinarjuanc@gmail.com",
+    "whatsapp": "+541136093844",
+    "linkedin": "https://www.linkedin.com/in/juan-cruz-di-nardo",
+    "github": "https://github.com/juanxcru",
+    "stack": {
+      "frameworks":["Spring", "Angular", "Base24", "FastApi"],
+      "database":["MongoDB", "MySQL", "Oracle"],
+      "languages":["Java", "C/C++", "Python", "TAL", "Typescript"],
+      "other":["Base24", "Tandem NonStop", "CI/CD", "Docker"]
+    },
+    "bio1": {
+      "es":"Soy Backend Engineer con más de 4 años de experiencia desarrollando y manteniendo sistemas transaccionales de alta disponibilidad y APIs empresariales. Trabajo principalmente con Java y el ecosistema Spring, diseño APIs REST y resuelvo incidentes en entornos críticos donde la estabilidad no es opcional.Me motiva el trabajo en equipo y la posibilidad de hacer que la tecnología realmente funcione mejor para las personas.",
+      "en":"Backend Engineer with 4+ years of experience building and maintaining high-availability transactional systems and enterprise APIs. Background in Java and Spring ecosystem, REST API design and production incident resolution in mission-critical environments. Motivated by teamwork, and the opportunity to make technology work better for people."
+    },
+    "bio2": {
+      "es":"Cuando no estoy programando, probablemente esté buceando (sí, soy buzo certificado), acompañando y mentoreando a desarrolladores más juniors o haciendo música. También me encanta cocinar y probar sabores nuevos; es mi forma de desconectar y activar la creatividad fuera del código.",
+      "en":"When I'm not coding, you'll find me diving (yes, I'm a certified scuba diver!), mentoring junior developers, or making music. I also have a passion for cooking and exploring new cuisines, which I find to be a great creative outlet outside of programming"
+    },
+    "bio3": {
+      "es":"Me siento cómodo en entornos colaborativos donde pueda aprender de otros y compartir lo que sé. Disfruto mucho acompañar a quienes están dando sus primeros pasos y aportar desde donde haga falta. Siempre estoy abierto a nuevos desafíos que me ayuden a crecer, tanto como desarrollador como en lo personal.",
+      "en":"I thrive in collaborative environments where I can learn from others and share my knowledge. I enjoy mentoring junior developers and contributing in whatever way I can. I'm always open to new challenges and opportunities to grow as a developer and as a person."
+    },
+    "experience": [
+      {
+        "company": "",
+        "role": {"es": "", "en": "" },
+        "from": "",
+        "to": "",
+        "description":{"es":"", "en": ""},
+        "bullets": [
+          "", ""
+        ]
+      },
+      {
+        "company": "",
+        "role": {"es": "", "en": "" },
+        "from": "",
+        "to": "",
+        "description": {"es":"", "en": ""},
+        "bullets": [
+          "", ""
+        ]
+      }
+
+    ]
+}
