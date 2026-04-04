@@ -8,6 +8,7 @@ public record CVInfoDTO(
         String title,
         String subtitle,
         String availability,
+        String avail_short,
         String coverLetter,
         String location,
         String email,

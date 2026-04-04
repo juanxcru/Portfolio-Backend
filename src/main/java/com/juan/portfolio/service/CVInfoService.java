@@ -31,6 +31,7 @@ public class CVInfoService {
                 resolveTxt(rawJson.get("title"),_lang),
                 resolveTxt(rawJson.get("subtitle"),_lang),
                 resolveTxt(rawJson.get("availability"),_lang),
+                resolveTxt(rawJson.get("avail_short"),_lang),
                 resolveTxt(rawJson.get("coverLetter"),_lang),
                 resolveTxt(rawJson.get("location"),_lang),
                 resolveTxt(rawJson.get("email"),_lang),

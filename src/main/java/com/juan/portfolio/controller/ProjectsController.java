@@ -22,7 +22,7 @@ public class ProjectsController {
     @GetMapping("/")
     public ResponseEntity<List<GitHubRepoDTO>> getProjects(){
 
-        return ResponseEntity.status(201).body(projectService. listProjects());
+        return ResponseEntity.status(201).body(projectService.listProjects());
 
     }
 

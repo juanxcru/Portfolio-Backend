@@ -9,23 +9,22 @@
       "en":"Building scalable, secure, and high-performance systems. Passionate about clean architecture, distributed systems, and turning complex problems into elegant solutions."
     },
     "availability": {
-      "es":"Estoy disponible solo para proyectos/posiciones remotas",
-      "en":"Open to remote opportunities only"
+      "es":"Estoy disponible solo para proyectos/posiciones remotas como Contractor (B2B - Global Contracts).",
+      "en":"Open to new opportunities or B2B / Global Contracts. Legally authorized for long-term remote work for international clients"
     },
-    "cover_letter" : {
-      "es":"",
-      "en":""
+    "avail_short" : {
+      "es":"Abierto a Freelance / Full time",
+      "en":"Open to work Freelance / Full time"
     },
-    "location": {"es": "Actualmente, viajando", "en": "Currently, travelling"},
+    "location": {"es": "Tailandia - DTV Visa", "en": "Thailand - DTV Visa"},
     "email": "dinarjuanc@gmail.com",
-    "whatsapp": "+541136093844",
     "linkedin": "https://www.linkedin.com/in/juan-cruz-di-nardo",
     "github": "https://github.com/juanxcru",
     "stack": {
-      "frameworks":["Spring", "Angular", "Base24", "FastApi"],
+      "frameworks":["Spring", "Angular", "FastApi"],
+      "languages":["Java", "Typescript", "C/C++", "Python", "TAL"],
       "database":["MongoDB", "MySQL", "Oracle"],
-      "languages":["Java", "C/C++", "Python", "TAL", "Typescript"],
-      "other":["Base24", "Tandem NonStop", "CI/CD", "Docker"]
+      "other":["Base24", "Docker","Tandem NonStop", "React"]
     },
     "bio1": {
       "es":"Soy Backend Engineer con más de 4 años de experiencia desarrollando y manteniendo sistemas transaccionales de alta disponibilidad y APIs empresariales. Trabajo principalmente con Java y el ecosistema Spring, diseño APIs REST y resuelvo incidentes en entornos críticos donde la estabilidad no es opcional.Me motiva el trabajo en equipo y la posibilidad de hacer que la tecnología realmente funcione mejor para las personas.",
@@ -43,31 +42,35 @@
       {
         "company": "Freelance",
         "role": {"es": "Desarrollador Backend", "en": "Backend Developer" },
-        "from": "",
-        "to": "",
+        "from": "2022",
+        "to": "actual",
         "description":{"es":"", "en": ""},
         "bullets": [
-          "Spring Boot","Java", "Python", "TypeScript"
+          "Spring Boot","Java", "Python", "TypeScript", "Redis", "PostgreSQL", "MongoDB"
         ]
       },
       {
         "company": "Link S.A.",
         "role": {"es": "Desarrollador Backend", "en": "Backend Developer" },
-        "from": "",
-        "to": "",
-        "description":{"es":"", "en": ""},
+        "from": "2024",
+        "to": "2026",
+        "description":{
+          "es": "Diseñe y mantuve servicios backend y REST APIs de la red mas grande de ATM de Argentina (+12K ATM).",
+          "en": "Designed and maintained backend services and APIs for the largest Argentina’s ATM network (+12K ATM)."},
         "bullets": [
-          "Base24","Java", "C/C++", "TAL", "Python"
+          "C/C++","Java", "Base24","CI/CD", "Python", "Agile"
         ]
       },
       {
-        "company": "Prisma Medios de Pago",
+        "company": "Prisma Medios de Pago - Newpay - Banelco",
         "role": {"es": "Desarrollador Backend", "en": "Backend Developer" },
-        "from": "",
-        "to": "",
-        "description": {"es":"", "en": ""},
+        "from": "2022",
+        "to": "2024",
+        "description": {
+          "es": "Personalicé y mantuve los servicios transaccionles (BASE24) para requerimientos específicos de entidades bancarias.",
+          "en": "Customized and enhanced enterprise transaction processing systems (BASE24) for banking clients."},
         "bullets": [
-          "Base24","Java", "C/C++", "TAL"
+          "Base24","Java", "C/C++", "TAL", "Agile"
         ]
       }
 

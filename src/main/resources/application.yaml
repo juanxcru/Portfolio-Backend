@@ -1,7 +1,13 @@
 spring:
   application:
     name: portfolio
+
+logging:
+  level:
+    org.springframework.web: debug
+
 githubclient:
   base-url: https://api.github.com
+  token:    #env
   user-agent: juan-portfolio
   username: juanxcru

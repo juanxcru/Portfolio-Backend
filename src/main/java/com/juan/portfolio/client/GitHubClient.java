@@ -18,6 +18,7 @@ public class GitHubClient {
     private final GitHubClientProps props;
 
     private final RestClient restClient;
+
     public GitHubClient (GitHubClientProps props){
         this.props = props;
         this.restClient = RestClient.builder()
@@ -32,10 +33,11 @@ public class GitHubClient {
 
     //ToDo: Only repos with topic: 'portfolio' (maybe change our user to 'org' in github)
     public ResponseEntity<GitHubRepoDTO[]> listUserRepos(@Nullable String etag) {
+
          return restClient.get()
                                 .uri("/users/{user}/repos?per_page=30&sort=updated", props.username())
                                     .headers(h -> {
-                                        if (etag != null) {
+                                        if (etag != null && !etag.isEmpty()) {
                                             h.set(HttpHeaders.IF_NONE_MATCH, etag);
                                         }
                                     })
