@@ -15,3 +15,9 @@ githubclient:
   token:    ${GITHUB_TOKEN}
   user-agent: ${GITHUB_AGENT}
   username: ${GITHUB_USERNAME}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
