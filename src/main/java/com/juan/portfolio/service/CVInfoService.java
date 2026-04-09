@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.juan.portfolio.model.dto.CVInfoDTO;
 import com.juan.portfolio.model.dto.ExperienceDTO;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -23,11 +22,11 @@ public class CVInfoService {
         }
     }
 
-    public ResponseEntity<?> getInfo(String lang){
+    public CVInfoDTO getInfo(String lang){
 
         String _lang = normalizeLang(lang);
 
-        return ResponseEntity.ok(new CVInfoDTO(
+        return new CVInfoDTO(
                 resolveTxt(rawJson.get("title"),_lang),
                 resolveTxt(rawJson.get("subtitle"),_lang),
                 resolveTxt(rawJson.get("availability"),_lang),
@@ -42,7 +41,7 @@ public class CVInfoService {
                 resolveTxt(rawJson.get("bio1"),_lang),
                 resolveTxt(rawJson.get("bio2"),_lang),
                 resolveTxt(rawJson.get("bio3"),_lang),
-                resolveExp(_lang)));
+                resolveExp(_lang));
     }
 
     private String resolveTxt(JsonNode node, String lang){

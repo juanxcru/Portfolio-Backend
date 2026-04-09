@@ -1,5 +1,6 @@
 package com.juan.portfolio.controller;
 
+import com.juan.portfolio.model.dto.CVInfoDTO;
 import com.juan.portfolio.service.CVInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +16,17 @@ public class CVInfoController {
     CVInfoService cvInfoService;
 
     @GetMapping("")
-    public ResponseEntity<?> getInfo (@RequestHeader(name = "Accept-Language", required = false) Locale locale ){
+    public ResponseEntity<CVInfoDTO> getInfo (@RequestHeader(name = "Accept-Language", required = false) Locale locale ){
 
         String lang = locale != null ? locale.getLanguage() : "en";
-        return cvInfoService.getInfo(lang);
+
+        CVInfoDTO cvInfo = cvInfoService.getInfo(lang);
+
+        if( cvInfo == null || cvInfo.title().isEmpty() ) {
+            return ResponseEntity.status(404).body(cvInfo);
+        }else{
+            return ResponseEntity.status(200).body(cvInfo);
+        }
 
     }
 }
