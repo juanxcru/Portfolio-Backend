@@ -9,12 +9,9 @@ import java.util.List;
 public record GitHubRepoDTO(
         long id,
         String name,
-        @JsonProperty("full_name") String fullName,
-        String url,
-        @JsonProperty("html_url") String htmlUrl,
+        @JsonProperty("html_url")
+        String htmlUrl,
         String description,
-        boolean fork,
-        @JsonProperty("updated_at") String updatedAt,
-        String language,
+        String homepage,
         List<String> topics
 ) {}

@@ -33,7 +33,6 @@ public class GitHubClient {
 
     //ToDo: Only repos with topic: 'portfolio' (maybe change our user to 'org' in github)
     public ResponseEntity<GitHubRepoDTO[]> listUserRepos(@Nullable String etag) {
-
          return restClient.get()
                                 .uri("/users/{user}/repos?per_page=30&sort=updated", props.username())
                                     .headers(h -> {

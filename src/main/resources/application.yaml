@@ -6,8 +6,12 @@ logging:
   level:
     org.springframework.web: debug
 
+app:
+  cors:
+    allowed-origins: ${ALLOWED_ORIGINS:http://localhost:4200}
+
 githubclient:
-  base-url: https://api.github.com
-  token:    #env
-  user-agent: juan-portfolio
-  username: juanxcru
+  base-url: ${GITHUB_BASEURL}
+  token:    ${GITHUB_TOKEN}
+  user-agent: ${GITHUB_AGENT}
+  username: ${GITHUB_USERNAME}

@@ -1,8 +1,6 @@
 package com.juan.portfolio.controller;
 
 import com.juan.portfolio.model.dto.GitHubRepoDTO;
-import com.juan.portfolio.model.dto.ProjectDto;
-import com.juan.portfolio.model.dto.ResponseDTO;
 import com.juan.portfolio.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,22 +11,22 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/project")
+@RequestMapping("/projects")
 public class ProjectsController {
 
     @Autowired
     ProjectService projectService;
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<List<GitHubRepoDTO>> getProjects(){
 
-        return ResponseEntity.status(201).body(projectService.listProjects());
+        List<GitHubRepoDTO> projects = projectService.listProjects();
 
-    }
+        if (projects != null && !projects.isEmpty()){
+            return ResponseEntity.status(200).body(projects);
+        }else{
+            return ResponseEntity.status(404).body(List.of());
+        }
 
-
-    public static ResponseDTO mapProjectsToResponseDTO(List<ProjectDto> projects){
-
-        return new ResponseDTO();
     }
 }
